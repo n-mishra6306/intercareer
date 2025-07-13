@@ -26,7 +26,7 @@ const internships = [
         link: "post2.html"
     },
     {
-        id: 2,
+        id: 1,
         title: "Marketing Intern",
         company: "Digital Marketing Agency",
         platform: "Internshala",
