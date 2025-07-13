@@ -41,6 +41,11 @@
       margin-top: 10px;
       background-color: #f2f2f2;
     }
+ #theme-selector{
+        margin-left: 1300px;
+        border: 2px solid beige;
+        border-radius: 10px;
+    }
 /* Base Styles */
 :root {
     --primary-color: #3498db;
