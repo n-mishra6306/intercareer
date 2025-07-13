@@ -15,7 +15,7 @@ const internships = [
         link: "post1.html"
     },
       {
-        id: 1,
+        id: 2,
         title: "Frontend Developer Intern",
         company: "Tech Solutions Inc.",
         platform: "LinkedIn",
@@ -26,7 +26,7 @@ const internships = [
         link: "post2.html"
     },
     {
-        id: 1,
+        id: 3,
         title: "Marketing Intern",
         company: "Digital Marketing Agency",
         platform: "Internshala",
