@@ -1,0 +1,17 @@
+/intercareer/
+├── index.html              # Homepage
+├── about.html              # About Us page
+├── contact.html            # Contact page
+├── privacy-policy.html     # Privacy Policy
+├── terms.html             # Terms & Conditions
+├── /posts/                # Directory for internship posts
+│   ├── post-1.html        # Sample post 1
+│   ├── post-2.html        # Sample post 2
+│   └── ...                # More posts added daily
+├── /css/
+│   ├── style.css          # Main stylesheet
+│   └── responsive.css     # Media queries
+├── /js/
+│   ├── main.js            # Main JavaScript
+│   └── search.js          # Search functionality
+└── /images/               # All website images

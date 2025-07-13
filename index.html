@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daily internship listings and career updates from LinkedIn, Naukri, Internshala and more">
+    <title>InterCareer - Daily Internship Listings</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">InterCareer</a></h1>
+                <p>Your daily internship resource</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html">promotions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <div class="container">
+            <input type="text" id="searchInput" placeholder="Search internships...">
+            <button id="searchBtn">Search</button>
+            <div class="filter-options">
+                <select id="platformFilter">
+                    <option value="">All Platforms</option>
+                    <option value="LinkedIn">LinkedIn</option>
+                    <option value="Naukri">Naukri.com</option>
+                    <option value="Internshala">Internshala</option>
+                </select>
+                <select id="categoryFilter">
+                    <option value="">All Categories</option>
+                    <option value="Engineering">Engineering</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Design">Design</option>
+                    <option value="Design">programming</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <section class="featured-posts">
+            <h2>Today's Internship Opportunities</h2>
+            <div class="posts-grid" id="postsContainer">
+                <!-- Posts will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- AdSense Ad Unit (example) -->
+        <div class="ad-container">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+                crossorigin="anonymous"></script>
+            <!-- InterCareer Homepage Banner -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                data-ad-slot="XXXXXXXXXX"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="currentYear"></span> InterCareer. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>
