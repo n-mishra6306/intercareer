@@ -72,3 +72,32 @@ function renderInternships(data) {
 document.addEventListener('DOMContentLoaded', () => {
     renderInternships(internships);
 });
+const themeSelector = document.getElementById('theme-selector');
+
+    function applyTheme(mode) {
+      document.body.classList.remove('light-mode', 'dark-mode');
+
+      if (mode === 'light') {
+        document.body.classList.add('light-mode');
+        localStorage.setItem('theme', 'light');
+      } else if (mode === 'dark') {
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        // System theme
+        localStorage.removeItem('theme');
+      }
+    }
+
+    // Load saved theme preference
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('theme') || 'system';
+      themeSelector.value = savedTheme;
+      applyTheme(savedTheme);
+    });
+
+    // On dropdown change
+    themeSelector.addEventListener('change', () => {
+      const selectedTheme = themeSelector.value;
+      applyTheme(selectedTheme);
+    });
