@@ -38,6 +38,9 @@ nav ul li{
     nav ul li a:hover::after {
       width: 100%;
     }
+    @media (max-width: 768px) {
+  /* make card layout stack vertically */
+}
 
 /* Default (Light Theme) */
     body {
