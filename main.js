@@ -34,7 +34,7 @@ const internships = [
         date: "2023-06-14",
         excerpt: "Learn digital marketing strategies and assist in campaign management.",
         image: "https://via.placeholder.com/600x400?text=Marketing+Intern",
-        link: "posts/post-2.html"
+        link: "post3.html"
     },
     // Add more sample data as needed
 ];
