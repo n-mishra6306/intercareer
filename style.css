@@ -1,3 +1,46 @@
+/* Default (Light Theme) */
+    body {
+      background-color: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Dark Theme */
+    body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    body.dark-mode .card {
+      background-color: #1e1e1e;
+    }
+
+    /* System Preference (only applies when no class is set) */
+    @media (prefers-color-scheme: dark) {
+      body:not(.light-mode):not(.dark-mode) {
+        background-color: #121212;
+        color: #ffffff;
+      }
+      body:not(.light-mode):not(.dark-mode) .card {
+        background-color: #1e1e1e;
+      }
+    }
+
+    /* Theme Selector Dropdown */
+    #theme-selector {
+      font-size: 1rem;
+      padding: 6px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      padding: 16px;
+      border-radius: 8px;
+      margin-top: 10px;
+      background-color: #f2f2f2;
+    }
 /* Base Styles */
 :root {
     --primary-color: #3498db;
