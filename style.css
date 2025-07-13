@@ -7,7 +7,9 @@
       transition: background-color 0.3s, color 0.3s;
     }
     #theme-selector{
-        margin-left: 1300px;
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto;
         border: 2px solid beige;
         border-radius: 10px;
     }
