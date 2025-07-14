@@ -55,6 +55,38 @@
     p {
       line-height: 1.6;
     }
+     /* Dark mode support */
+    body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    body.dark-mode .container {
+      background-color: #1e1e1e;
+    }
+
+    body.dark-mode input,
+    body.dark-mode textarea {
+      background-color: #2a2a2a;
+      color: #ffffff;
+      border-color: #444;
+    }
+
+    body.dark-mode .navbar {
+      background-color: #222;
+    }
+
+    /* System default */
+    @media (prefers-color-scheme: dark) {
+      body:not(.light-mode):not(.dark-mode) {
+        background-color: #121212;
+        color: #ffffff;
+      }
+
+      body:not(.light-mode):not(.dark-mode) .container {
+        background-color: #1e1e1e;
+      }
+    }
   </style>
 </head>
 <body>
