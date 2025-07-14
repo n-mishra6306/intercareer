@@ -11,6 +11,7 @@
       padding: 0;
       background-color: #f8f8f8;
       color: #333;
+      transition: background-color 0.3s, color 0.3s;
     }
 
     .navbar {
@@ -38,7 +39,7 @@
       color: #00aced;
       margin-right: 20px;
     }
-   
+
     .container {
       max-width: 800px;
       margin: 40px auto;
@@ -52,8 +53,66 @@
       color: #2c3e50;
     }
 
-    p {
-      line-height: 1.6;
+    label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      background-color: #00aced;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0084b4;
+    }
+
+    /* Dark mode support */
+    body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    body.dark-mode .container {
+      background-color: #1e1e1e;
+    }
+
+    body.dark-mode input,
+    body.dark-mode textarea {
+      background-color: #2a2a2a;
+      color: #ffffff;
+      border-color: #444;
+    }
+
+    body.dark-mode .navbar {
+      background-color: #222;
+    }
+
+    /* System default */
+    @media (prefers-color-scheme: dark) {
+      body:not(.light-mode):not(.dark-mode) {
+        background-color: #121212;
+        color: #ffffff;
+      }
+
+      body:not(.light-mode):not(.dark-mode) .container {
+        background-color: #1e1e1e;
+      }
     }
   </style>
 </head>
@@ -64,19 +123,42 @@
       <h1>InterCareer</h1>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="contact.html" style="color: yellow;">Contact</a>
+      <a href="contact.html" style="text-decoration: underline yellow;">Contact</a>
     </div>
   </div>
 
   <div class="container">
-    <h2>Contact Details</h2>
-    <p><strong>Name:</strong> intercareer</p>
-    <p><strong>Email:</strong> nkhlm95@gmail.com</p>
-    <p><strong>Phone:</strong> +91 7697735504</p>
-    <p><strong>Location:</strong> Rewa, Madhya Pradesh, India</p>
-    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/nikhil-mishra-60378a329" target="_blank">linkedin.com/in/nikhil-mishra-60378a329</a></p>
-    
+    <h2>Contact Us</h2>
+    <p>Have a question, suggestion, or internship to share? Reach out to us!</p>
+
+<form action="https://formsubmit.co/animato122@gmail.com" method="POST">
+  <!-- Hidden to prevent spam -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://n-mishra6306.github.io/intercareer/thankyou.html">
+
+
+  <label for="name">Your Name</label>
+  <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+  <label for="email">Your Email</label>
+  <input type="email" name="email" id="email" placeholder="you@example.com" required>
+
+  <label for="message">Your Message</label>
+  <textarea name="message" id="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+  <button type="submit">Send Message</button>
+</form>
+
   </div>
 
+  <script>
+    // Load saved theme from localStorage
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      document.body.classList.add("dark-mode");
+    } else if (savedTheme === "light") {
+      document.body.classList.add("light-mode");
+    }
+  </script>
 </body>
 </html>
