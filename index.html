@@ -1,104 +1,185 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Daily internship listings and career updates from LinkedIn, Naukri, Internshala and more">
-    <title>InterCareer - Daily Internship Listings</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-</head>
-<body>
     
-
-    <header class="main-header">
-        <div class="container">
-            <div class="logo">
-                <h1><a href="index.html">InterCareer</a></h1>
-                <p>Your daily internship resource</p>
-           
+ </head>
+ <body>
+    
+ <!-- Enhanced Navigation Bar -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="https://via.placeholder.com/40x40" alt="InterCareer Logo">
+                InterCareer
+            </a>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="companies.html">Companies</a>
+                <a href="resources.html">Resources</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                
+                <div class="search-container">
+                    <input type="text" placeholder="Search jobs...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+                
+                <div class="categories-dropdown">
+                    <button class="categories-btn">
+                        Categories <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="categories-content">
+                        <a href="#">Technology</a>
+                        <a href="#">Healthcare</a>
+                        <a href="#">Finance</a>
+                        <a href="#">Education</a>
+                        <a href="#">Engineering</a>
+                        <a href="#">Marketing</a>
+                    </div>
+                </div>
             </div>
-            <nav class="main-nav">
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Your International Career Starts Here</h1>
+            <p>Find your dream job abroad with our comprehensive platform connecting talented professionals with top employers worldwide.</p>
+            <a href="#" class="btn">Browse Jobs</a>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="features">
+        <div class="section-title">
+            <h2>Why Choose InterCareer?</h2>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-globe"></i>
+                <h3>Global Opportunities</h3>
+                <p>Access thousands of job listings from top companies around the world in one convenient platform.</p>
+            </div>
+            
+            <div class="feature-card">
+                <i class="fas fa-user-tie"></i>
+                <h3>Career Guidance</h3>
+                <p>Get expert advice and resources to help you navigate the international job market successfully.</p>
+            </div>
+            
+            <div class="feature-card">
+                <i class="fas fa-handshake"></i>
+                <h3>Direct Connections</h3>
+                <p>Connect directly with employers and recruiters without middlemen or unnecessary hurdles.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <div class="section-title">
+                <h2>Success Stories</h2>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"InterCareer helped me land my dream job in Germany. The platform made the entire process seamless and stress-free."</p>
+                    <div class="author">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah K.">
+                        <div class="author-info">
+                            <h4>Sarah K.</h4>
+                            <p>Software Engineer, Berlin</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p>"As an employer, we've found exceptional talent through InterCareer. The quality of candidates is outstanding."</p>
+                    <div class="author">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael T.">
+                        <div class="author-info">
+                            <h4>Michael T.</h4>
+                            <p>HR Director, London</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p>"The resources and guidance provided by InterCareer were invaluable in my relocation to Canada. Highly recommended!"</p>
+                    <div class="author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya M.">
+                        <div class="author-info">
+                            <h4>Priya M.</h4>
+                            <p>Marketing Specialist, Toronto</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>InterCareer</h3>
+                <p>Connecting talent with global opportunities since 2015.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>For Candidates</h3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="contact.html">promotions</a></li>
+                    <li><a href="#">Browse Jobs</a></li>
+                    <li><a href="#">Create Profile</a></li>
+                    <li><a href="#">Job Alerts</a></li>
+                    <li><a href="#">Career Resources</a></li>
                 </ul>
-            </nav>
-        </div>
-          </header>
-   
-
-
-    <div class="search-container">
-        <div class="container">
-            <input type="text" id="searchInput" placeholder="Search internships...">
-            <button id="searchBtn">Search</button>
-            <div class="filter-options">
-                <select id="platformFilter">
-                    <option value="">All Platforms</option>
-                    <option value="LinkedIn">LinkedIn</option>
-                    <option value="Naukri">Naukri.com</option>
-                    <option value="Internshala">Internshala</option>
-                </select>
-                <select id="categoryFilter">
-                    <option value="">All Categories</option>
-                    <option value="Engineering">Engineering</option>
-                    <option value="Marketing">Marketing</option>
-                    <option value="Design">Design</option>
-                    <option value="Design">programming</option>
-                </select>
             </div>
-        </div>
-    </div>
-         <select id="theme-selector" placeholder="theme">
-    
-    <option value="light">☀️ Light</option>
-    <option value="dark">🌙 Dark</option>
-  </select>
-
-    <main class="container">
-        <section class="featured-posts">
-            <h2>Today's Internship Opportunities</h2>
-            <div class="posts-grid" id="postsContainer">
-                <!-- Posts will be dynamically loaded here -->
-            </div>
-        </section>
-
-        <!-- AdSense Ad Unit (example) -->
-        <div class="ad-container">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
-                crossorigin="anonymous"></script>
-            <!-- InterCareer Homepage Banner -->
-            <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-                data-ad-slot="XXXXXXXXXX"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
-    </main>
-
-    <footer class="main-footer">
-        <div class="container">
-            <div class="footer-links">
+            
+            <div class="footer-col">
+                <h3>For Employers</h3>
                 <ul>
+                    <li><a href="#">Post a Job</a></li>
+                    <li><a href="#">Browse Candidates</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Recruitment Solutions</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
                     <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="terms.html">Terms & Conditions</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
                 </ul>
             </div>
-            <div class="copyright">
-                <p>&copy; <span id="currentYear"></span> InterCareer. All rights reserved.</p>
-            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 InterCareer. All rights reserved.</p>
         </div>
     </footer>
-
     <script src="main.js"></script>
-    <script src="search.js"></script>
-</body>
-</html>
+    </body>
+ </html>
